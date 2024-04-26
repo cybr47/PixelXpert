@@ -24,7 +24,6 @@ import sh.siava.pixelxpert.modpacks.launcher.FeatureFlags;
 import sh.siava.pixelxpert.modpacks.launcher.PixelXpertIconUpdater;
 import sh.siava.pixelxpert.modpacks.launcher.TaskbarActivator;
 import sh.siava.pixelxpert.modpacks.settings.AppCloneEnabler;
-import sh.siava.pixelxpert.modpacks.settings.PXSettingsLauncher;
 import sh.siava.pixelxpert.modpacks.systemui.BatteryDataProvider;
 import sh.siava.pixelxpert.modpacks.systemui.BatteryStyleManager;
 import sh.siava.pixelxpert.modpacks.systemui.BrightnessSlider;
@@ -142,9 +141,6 @@ public class ModPacks {
 			case Constants.TELECOM_SERVER_PACKAGE:
 				modPacks.add(CallVibrator.class);
 				break;
-
-			case Constants.SETTINGS_PACKAGE:
-				modPacks.add(PXSettingsLauncher.class);
 
 				if(Build.VERSION.SDK_INT > Build.VERSION_CODES.TIRAMISU)
 					modPacks.add(AppCloneEnabler.class);
